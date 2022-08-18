@@ -1,0 +1,683 @@
+/*importing fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0 auto;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-color: #02021b;
+}
+
+.container{
+    width: 80%;
+}
+
+.logo{
+    padding: 20px;
+}
+
+#navbar{
+    width: 100%;
+    height: 80px;
+    background-color: #02021b;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.list{
+    position: relative;
+    top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar-list li{
+    display: inline;
+}
+
+#navbar-list li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 23px;
+    font-weight: bold;
+
+}
+
+#navbar-list li a:hover{
+    background-color: white;
+    color: #02021b;
+    border-radius: 10px;
+}
+
+#bottom{
+    width: 100%;
+    height: 50px;
+    background-color: #02021b;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+}
+
+#bottom p{
+    color: white;
+    text-align: right;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+#bottom span{
+    font-style: italic;
+    color: #00d5ff;
+}
+
+.introduction{
+    position: relative;
+    width: 65%;
+    text-align: center;
+    box-sizing: border-box;
+    float: right;
+}
+
+.introduction h1{
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    border-top: 4px solid #02021b;
+    border-bottom: 4px solid #02021b;
+    padding: 30px 0px;
+
+}
+
+.introduction p{
+    text-align: justify;
+    margin: 40px 0px;   
+    padding-bottom: 20px;
+    border-bottom: 4px solid #02021b;
+}
+
+.main-image{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to bottom,rgba(0,0,0,0),rgba(2,2,27,100)),url(../images/DepartmentImage.jpg);
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    background-size: cover;
+}
+
+.main-image p{
+    position: relative;
+    top: 170px;
+    text-align: center;
+    font-size: 70px;
+    color: white;
+    text-shadow: 0 0 50px black;
+    font-weight: 700;
+}
+
+.main-image span{
+    color: #00d5ff;
+}
+
+#dpimage{
+    width: 100%;
+}
+
+.more{
+    padding-top: 30px;
+}
+
+.more a{
+    padding: 15px 25px;
+    margin-top: 30px;
+    background-color: #02021b;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.more a:hover{
+    background-color: #00d5ff;
+    color: #02021b;
+    font-weight: bold;
+}
+
+.skipbutton a{
+    position: fixed;
+    bottom: 85px;
+    right: 40px;
+    background-color: #00d5ff;
+    color: #02021b;
+}
+
+.skipbutton a:hover{
+    background-color: #02021b;
+    color: #00d5ff;
+}
+
+.middlecontent{
+    display: inline;
+}
+
+.middle1{
+    width: 30%;
+    float: left;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.middle1-below{
+    margin-top: 30px;
+    width: 380px;
+    background-color: red;
+    padding: 30px 0;
+    height: 280px;
+    background-color: #00d5ff;
+    border-radius: 15px;
+}
+
+.middle1-below h3{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #02021b;
+}
+
+.middle1-below a{
+    padding-bottom: 20px;
+    text-decoration: none;
+    text-align: left;
+    padding-left: 65px;
+    color: #02021b;
+}
+
+.middle1-below a:hover{
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.bottom-logos{
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.bottom-logos img{
+    width: 19%;
+}
+
+/*About.html*/
+
+.first-box{
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.headive{
+    width: 85%;
+    border-bottom: 5px solid #02021b;
+}
+
+.first-box h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+.boxes{
+    display: flex;
+    margin-top: 50px;
+    width: 80%;
+}
+
+.box{
+    width: 25%;
+    height: auto;
+    margin: 0px 15px;
+    padding: 20px 15px;
+}
+
+.box:hover{
+    border: 3px solid #02021b;
+    border-radius: 15px;
+    transform: scale(1.15);
+    font-weight: bolder;
+    background-color: rgba(0, 213, 255, 0.5);
+
+}
+
+.boxhead{
+    width: 100%;
+    background-color: #02021b;
+    padding: 10px 0px;
+    border-radius: 15px;
+}
+
+
+.box h3{
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+.box p{
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+.secondtitle{
+    font-size: 40px;
+    font-weight: bolder;
+    padding-bottom: 30px;
+    border-bottom: 5px solid #02021b;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.introbox{
+    width: 80%;
+    padding-bottom: 50px;
+}
+
+.introbox p{
+    text-align: justify;
+}
+
+.introbox li{
+    margin-bottom: 12px;
+}
+
+/*student.html*/
+
+.tableStudent, th{
+    margin-top: 80px;
+}
+
+table, tr, td, th{ 
+    border: 2.5px solid #02021b;
+    border-collapse: collapse;
+}
+
+.tableStudent th{
+    font-size: 20px;
+}
+
+.tableStudent td,th{
+    padding: 10px 15px 10px 15px;
+}
+
+.tabledetails{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.tabledetails p{
+    margin-bottom: 5px;
+}
+
+
+/*gallery*/
+
+.image-group{
+   display: inline-block;
+   margin-right: 15px;
+   width: 100%;
+   z-index: 0;
+   margin-top: 50px;
+}
+
+.img-row{
+    display: flex;
+}
+
+.img-div img{
+    margin: 5px;
+    border-radius: 25px;
+}
+
+.img-div img:hover{
+    box-shadow: 0 0 10px #02021b;
+}
+
+/*contact*/
+
+.contact-box{
+    display: inline;
+    width: 50%;
+}
+
+.left-box{
+    display: block;
+    float: left;
+    width: 40%;
+    margin-top: 50px;
+}
+
+.contactDetails{
+    padding-top: 60px;
+}
+
+.enve, .attachment{
+    padding: 0;
+}
+
+.icon{
+    width: 10%;
+    float: left;
+    margin-left: 50px;
+}
+
+.para{
+    float: right;
+    width: 75%;
+
+}
+
+.para p{
+    float: left;
+}
+
+.right-box{
+    float: right;
+    margin-top: 50px;
+}
+
+.right-box{
+    width: 40%;
+    padding: 50px 0px 50px 100px;
+    border-left: 3px solid black;
+}
+
+.right-box h3{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.piece{
+    display: inline;
+}
+
+.piece label{
+    float: left;
+    margin-top: 5px;
+}
+
+.piece input, .piece select{
+    float: right;
+    border: none;
+    border-left: 2px solid #02021b;
+    background-color: rgba(2, 2, 27, 0.05);
+    padding: 5px 20px 5px 20px;
+}
+
+.gendervalues, .subjectvalues{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.age input{
+    width: 50px;
+    margin-right: 212px;
+}
+
+.gendervalues label, .gendervalues input, .subjectvalues label, subjectvalues input{
+    padding: 0;
+    margin: 0 auto;
+}
+
+.gender input, .subject input{
+    margin-right: 220px;
+    width: 50px;
+}
+
+.province select{
+    margin-right: 93px;
+}
+
+.profile input{
+    margin-right: 12px;
+}
+
+.buttons button{
+    padding: 15px 25px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-top: 30px;
+    background-color: #02021b;
+    color: #00d5ff;
+    font-weight: bold;
+}
+
+.buttons button:hover{
+    color: #02021b;
+    background-color: #00d5ff;
+}
+
+.piece > label{
+    font-weight: bolder;
+}
+
+.left-below {
+    margin: 20px 0px 0px 0px;
+}
+
+.left-below h3{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+/*media-queries*/
+
+@media(max-width: 700px){
+	
+	.container{
+		width: 100%;
+	}
+	
+	#navbar{
+		height: 250px;
+        text-align: center;
+        position: relative;
+        top: 0;
+	}
+	
+	#navbar ul li{
+		display: block;
+	}
+	
+	#navbar ul li{
+		margin-bottom: 25px;
+		padding: 0;
+	}
+	
+	#navbar ul li a{
+		border: none;
+	}
+	
+	.main-image p{
+	   position: relative;
+       top: 125px;
+	   font-size: 50px ;
+
+    }
+	
+	.middlecontent{
+		display: block;
+	}
+	
+	.middle1{
+		float: none;
+		width: 90%;
+	}
+	
+	.middle1 img{
+		width: 95%;
+		margin-bottom: 0;
+	}
+	
+	.introduction{
+		float: none;
+		width: 90%;
+	}
+	
+	.middle1-below{
+		width: 90%;
+	}
+	
+	.middle1-below a{
+	
+	}
+	
+	.bottom-logos{
+		display: block;
+	}
+	
+	.bottom-logos img{
+		width: 30%;
+		padding: 10px 0px;
+		margin: auto;
+		padding-left: 35%;
+		padding-right: 25%;
+	}
+
+    #bottom p{
+    text-align: center;
+
+}
+
+    /*about us*/
+    .boxes{
+        display: block;
+    }
+
+    .box{
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+    /*student*/
+    .tableStudent th{
+        font-size: 20px;
+    }
+
+    .tableStudent td,th{
+        padding: 10px 10px 10px 10px;
+    }
+
+    /*gallery*/
+
+    .image-group{
+        display: block;
+        margin-top: 50px;
+    }
+
+    .img-row. , .img-div{
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .img-row{
+        display: block;
+    }
+
+    .img-div{
+        width: 50%;
+    }
+
+    .img-div img{
+        border-radius: 15px;
+        width: 100%;
+    }
+
+   .img-div img:hover{
+        box-shadow: 0 0 10px #02021b;
+    }
+
+    /*contact*/
+    .contact-box{
+        display: block;
+        width:80%;
+    }
+
+    .left-box{
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+
+    .right-box{
+        float: none;
+        width: 100%;
+        border: none;
+        padding: 0;
+    }
+
+    .contactDetails{
+        padding: 0;
+        width: 80%;
+        display: inline;
+    }
+
+    .home img{
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .phone img{
+        margin-top: 20px;
+    }
+
+    .enve img{
+        margin-top: 17px;
+    }
+
+    .attachment img{
+        margin-top: 10px;
+    }
+
+    .para{
+        margin-bottom: 20px;
+    }
+
+
+    .left-above{
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .left-below iframe{
+        width: 100%;
+    }
+
+    .contactDetails{
+        width: 100%;
+    }
+
+    #form{
+        font-size: 10px;
+    }
+
+}
+
+@media(max-width: 900px){
+
+    #form{
+        font-size: 10px;
+    }
+
+}
